@@ -1,6 +1,6 @@
 {
   "name": "string-format-jsx",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A lightweight and framework-independent library for template string interpolation similar to JSX elements.",
   "keywords": [
     "jsx interpolation"
