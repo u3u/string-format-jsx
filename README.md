@@ -26,7 +26,7 @@ formatElements('Hello, <a>@u3u</a>', {
 
 ### React
 
-The default entry point is to use `React.createElement`.
+Use the entrance of `React.createElement` by default
 
 ```tsx
 import { formatElements } from 'string-format-jsx/react';
@@ -134,7 +134,12 @@ const vnode = (
     scopedSlots={{
       a: (children) => {
         return (
-          <a class="cursor-pointer text-primary hover:text-primary-400" onClick={() => console.log(children)}>
+          <a
+            class="cursor-pointer text-primary hover:text-primary-400"
+            onClick={() => {
+              console.log(children);
+            }}
+          >
             {children}
           </a>
         );
