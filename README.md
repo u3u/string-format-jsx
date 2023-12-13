@@ -28,7 +28,7 @@ formatElements('Hello, <a>@u3u</a>', {
 
 Use the entrance of `React.createElement` by default
 
-> ![TIP]
+> [!TIP]
 >
 > The `formatElements` is only used for replacing JSX elements and does not include string interpolation functionality. You can use it together with the built-in [`interpolation`](#interpolation) function or any other interpolation library.
 
