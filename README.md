@@ -88,7 +88,7 @@ const result = (
 
 ### Interpolation
 
-Built-in support for simple string templates, you can use any other string interpolation library.
+Built-in support for simple string templates interpolation, you can use any other string interpolation library.
 
 ```ts
 import { interpolation } from 'string-format-jsx';
