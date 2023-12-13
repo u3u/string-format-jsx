@@ -11,7 +11,7 @@ it('should match snapshots', () => {
         The number is <b>{count}</b>.
       `,
       {
-        createElement: (type, children, key) => ({ children, key, type }),
+        createElement: (type, props, children) => ({ children, props, type }),
       },
     ),
 

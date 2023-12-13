@@ -1,6 +1,12 @@
 export interface FormatElementsOptions<T> {
-  components?: Record<string, (children: T | string, key: number) => T>;
-  createElement?(type: string, children: T | string, key: number): T;
+  components?: Record<string, (children: (T | string)[] | string, key: number) => T>;
+  createElement?(
+    type: string,
+    props: {
+      key: number;
+    },
+    children: (T | string)[] | string,
+  ): T;
 }
 
 export const formatElements = <T>(text: string, options: FormatElementsOptions<T> = {}) => {
@@ -20,15 +26,15 @@ export const formatElements = <T>(text: string, options: FormatElementsOptions<T
 
   for (const [key, [type, children, after]] of elements.entries()) {
     const render = components?.[type];
-    const child = children && (formatElements<T>(children, options) as T | string);
+    const child = children && formatElements<T>(children, options);
 
     tree.push(
       render
         ? render?.(child, key)
         : //
           createElement
-          ? createElement?.(type, child, key)
-          : child,
+          ? createElement?.(type, { key }, child)
+          : (child as string),
     );
 
     if (after) tree.push(after);

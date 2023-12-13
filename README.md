@@ -20,7 +20,7 @@ Use with any framework
 import { formatElements } from 'string-format-jsx';
 
 formatElements('Hello, <a>@u3u</a>', {
-  createElement: (type, children, key) => yourFramework.createElement(type, { key }, children),
+  createElement: (type, props, children) => yourFramework.createElement(type, props, children),
 });
 ```
 
@@ -95,6 +95,39 @@ const result = interpolation('Hello, {name} ({count})', {
     name: 'u3u',
   },
 });
+```
+
+## Examples
+
+### Vue2
+
+```js
+import { formatElements, interpolation } from 'string-format-jsx';
+
+export const Trans = {
+  functional: true,
+
+  name: 'Trans',
+
+  props: {
+    tag: { default: 'span', type: String | Object | Function },
+    text: String,
+    values: Object,
+  },
+
+  render: (h, { data, props, scopedSlots: slots }) => {
+    const { tag, text, values } = props;
+
+    return h(
+      tag,
+      data,
+      formatElements(interpolation(text, { values }), {
+        components: slots,
+        createElement: h,
+      }),
+    );
+  },
+};
 ```
 
 ## Thanks

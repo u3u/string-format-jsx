@@ -20,7 +20,7 @@ export interface FormatElementsOptions extends Options<ReactNode> {}
  */
 export const formatElements = (text: string, options: FormatElementsOptions = {}) => {
   return format<ReactNode>(text, {
-    createElement: (type, children, key) => createElement(type, { key }, children),
+    createElement,
     ...options,
   });
 };
