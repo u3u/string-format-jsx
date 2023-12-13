@@ -110,7 +110,7 @@ export const Trans = {
   name: 'Trans',
 
   props: {
-    tag: { default: 'span', type: String | Object | Function },
+    tag: { default: 'span', type: [String, Object, Function] },
     text: String,
     values: Object,
   },
