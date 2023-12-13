@@ -1,0 +1,45 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`should match snapshots 1`] = `
+[
+  [
+    "Hello, ",
+    {
+      "children": [
+        "The number is ",
+        {
+          "children": "{count}",
+          "key": 0,
+          "type": "b",
+        },
+      ],
+      "key": 0,
+      "type": "component",
+    },
+    {
+      "children": undefined,
+      "key": 1,
+      "type": "br",
+    },
+    "The number is ",
+    {
+      "children": "{count}",
+      "key": 2,
+      "type": "b",
+    },
+    ".",
+  ],
+  [
+    "Hello, ",
+    {
+      "children": "@u3u",
+      "key": 0,
+      "type": "Mention",
+    },
+  ],
+  [
+    "Hello, ",
+    "@u3u",
+  ],
+]
+`;

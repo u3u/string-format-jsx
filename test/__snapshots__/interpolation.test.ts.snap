@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`should match snapshots 1`] = `
+[
+  "Hello, u3u (0)",
+  "Hello, u3u ({count})",
+  "蔡徐坤 你好，我今年 18 岁，我的爱好是 唱，跳，rap，篮球 。",
+]
+`;

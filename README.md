@@ -1,0 +1,106 @@
+# string-format-jsx
+
+> A lightweight and framework-independent library for template string interpolation similar to JSX elements.
+
+[![npm version](https://badgen.net/npm/v/string-format-jsx)](https://npm.im/string-format-jsx) [![npm downloads](https://badgen.net/npm/dm/string-format-jsx)](https://npm.im/string-format-jsx) [![codecov](https://codecov.io/gh/u3u/string-format-jsx/graph/badge.svg)](https://codecov.io/gh/u3u/string-format-jsx)
+
+## Install
+
+```sh
+pnpm add string-format-jsx
+```
+
+## Usage
+
+### Core
+
+Use with any framework
+
+```tsx
+import { formatElements } from 'string-format-jsx';
+
+formatElements('Hello, <a>@u3u</a>', {
+  createElement: (type, children, key) => yourFramework.createElement(type, { key }, children),
+});
+```
+
+### React
+
+The default entry point is to use `React.createElement`.
+
+```tsx
+import { formatElements } from 'string-format-jsx/react';
+
+const result = formatElements('Hello, <a>@u3u</a>', {
+  components: {
+    a: (children) => <Link>{children}</Link>,
+  },
+});
+```
+
+### Trans Component (React)
+
+Use `interpolation` and `formatElements` together.
+
+```tsx
+import { Trans } from 'string-format-jsx/trans';
+
+const result = (
+  <Trans
+    components={{
+      a: (children, key) => {
+        return (
+          <a
+            className="text-primary-500 hover:text-primary-400 transition"
+            key={key}
+            onClick={() => {
+              console.log(children);
+            }}
+          >
+            {children}
+          </a>
+        );
+      },
+
+      b: (children, key) => {
+        return (
+          <b className="font-medium" key={key}>
+            {children}
+          </b>
+        );
+      },
+    }}
+    text={dedent`
+      Hello, <a>The number is <b>{count}</b></a>
+      <br />
+      The number is <b>{count}</b>.
+    `}
+    values={{
+      count: 10,
+    }}
+  />
+);
+```
+
+### Interpolation
+
+Built-in support for simple string templates, you can use any other string interpolation library.
+
+```ts
+import { interpolation } from 'string-format-jsx';
+
+const result = interpolation('Hello, {name} ({count})', {
+  values: {
+    count: 0,
+    name: 'u3u',
+  },
+});
+```
+
+## Thanks
+
+Core extracted from [next-translate](https://github.com/aralroca/next-translate).
+
+## License
+
+[MIT](./LICENSE) License © 2023 [u3u](https://github.com/u3u)
