@@ -128,6 +128,28 @@ export const Trans = {
     );
   },
 };
+
+const vnode = (
+  <Trans
+    scopedSlots={{
+      a: (children) => {
+        return (
+          <a class="cursor-pointer text-primary hover:text-primary-400" onClick={() => console.log(children)}>
+            {children}
+          </a>
+        );
+      },
+
+      b: (children) => <b class="font-medium">{children}</b>,
+    }}
+    text={dedent`
+      Hello, <a>The number is <b>{count}</b></a>
+      <br />
+      The number is <b>{count}</b>.
+    `}
+    values={{ count: 10 }}
+  />
+);
 ```
 
 ## Thanks
