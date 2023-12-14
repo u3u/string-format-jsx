@@ -2,7 +2,12 @@
 
 > A lightweight and framework-independent library for template string interpolation similar to JSX elements.
 
-[![npm version](https://badgen.net/npm/v/string-format-jsx)](https://npm.im/string-format-jsx) [![npm downloads](https://badgen.net/npm/dm/string-format-jsx)](https://npm.im/string-format-jsx) [![codecov](https://codecov.io/gh/u3u/string-format-jsx/graph/badge.svg)](https://codecov.io/gh/u3u/string-format-jsx)
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![codecov][codecov-src]][codecov-href]
+[![bundle][bundle-src]][bundle-href]
+[![JSDocs][jsdocs-src]][jsdocs-href]
+[![License][license-src]][license-href]
 
 ## Install
 
@@ -168,3 +173,18 @@ Core extracted from [next-translate](https://github.com/aralroca/next-translate)
 ## License
 
 [MIT](./LICENSE) License © 2023 [u3u](https://github.com/u3u)
+
+<!-- Badges -->
+
+[npm-version-src]: https://img.shields.io/npm/v/string-format-jsx
+[npm-version-href]: https://npmjs.com/package/string-format-jsx
+[npm-downloads-src]: https://img.shields.io/npm/dm/string-format-jsx
+[npm-downloads-href]: https://npmjs.com/package/string-format-jsx
+[codecov-src]: https://codecov.io/gh/u3u/string-format-jsx/graph/badge.svg
+[codecov-href]: https://codecov.io/gh/u3u/string-format-jsx
+[bundle-src]: https://img.shields.io/bundlephobia/minzip/string-format-jsx?label=minzip
+[bundle-href]: https://bundlephobia.com/result?p=string-format-jsx
+[jsdocs-src]: https://paka.dev/badges/v0/cute.svg
+[jsdocs-href]: https://paka.dev/npm/string-format-jsx
+[license-src]: https://img.shields.io/github/license/u3u/string-format-jsx.svg
+[license-href]: ./LICENSE
