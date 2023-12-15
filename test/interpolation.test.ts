@@ -16,6 +16,14 @@ it('should match snapshots', () => {
       },
     }),
 
+    interpolation('Hello, {{name}}.', {
+      regex: /\{\{(.*?)\}\}/gu,
+
+      values: {
+        name: 'qwq',
+      },
+    }),
+
     interpolation('{name} 你好，我今年 {age} 岁，我的爱好是 {hobby} 。', {
       values: {
         age: 18,
