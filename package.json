@@ -72,7 +72,7 @@
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.17",
     "@u3u/eslint-config": "^2.14.1",
-    "@u3u/prettier-config": "^4.1.4",
+    "@u3u/prettier-config": "^5.1.0",
     "@vitest/coverage-v8": "^1.0.4",
     "@vitest/ui": "^1.0.4",
     "bumpp": "^9.2.1",
