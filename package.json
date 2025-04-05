@@ -86,7 +86,7 @@
     "simple-git-hooks": "^2.12.1",
     "string-format-jsx": "link:",
     "tsup": "^8.4.0",
-    "typescript": "^5.8.2",
+    "typescript": "^5.8.3",
     "vitest": "^1.6.1"
   },
   "peerDependencies": {
