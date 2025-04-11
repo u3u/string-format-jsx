@@ -45,8 +45,8 @@ devDependencies:
     specifier: ^1.2.0
     version: 1.2.0
   lint-staged:
-    specifier: ^15.5.0
-    version: 15.5.0
+    specifier: ^15.5.1
+    version: 15.5.1
   prettier:
     specifier: ^3.5.3
     version: 3.5.3
@@ -4850,8 +4850,8 @@ packages:
     resolution: {integrity: sha512-Wzx/22c5Jsv2ag+uKy+ITanGA5hzvBZngrNGDXLTC7ZjGM6FLCYGgomauTkxNJeP9of353OM0pWqngYA180xgw==}
     dev: true
 
-  /lint-staged@15.5.0:
-    resolution: {integrity: sha512-WyCzSbfYGhK7cU+UuDDkzUiytbfbi0ZdPy2orwtM75P3WTtQBzmG40cCxIa8Ii2+XjfxzLH6Be46tUfWS85Xfg==}
+  /lint-staged@15.5.1:
+    resolution: {integrity: sha512-6m7u8mue4Xn6wK6gZvSCQwBvMBR36xfY24nF5bMTf2MHDYG6S3yhJuOgdYVw99hsjyDt2d4z168b3naI8+NWtQ==}
     engines: {node: '>=18.12.0'}
     hasBin: true
     dependencies:
