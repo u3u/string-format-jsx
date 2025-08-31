@@ -75,7 +75,7 @@
     "@u3u/prettier-config": "^4.5.1",
     "@vitest/coverage-v8": "^1.6.1",
     "@vitest/ui": "^1.6.1",
-    "bumpp": "^9.11.1",
+    "bumpp": "^10.2.3",
     "dedent": "^1.6.0",
     "eslint": "^8.57.1",
     "fix-tsup-cjs": "^1.2.0",
