@@ -8,9 +8,9 @@ devDependencies:
   '@total-typescript/ts-reset':
     specifier: ^0.6.1
     version: 0.6.1
-  '@tsconfig/node20':
-    specifier: ^20.1.6
-    version: 20.1.6
+  '@tsconfig/node22':
+    specifier: ^22.0.0
+    version: 22.0.6
   '@types/node':
     specifier: ^20.19.10
     version: 20.19.10
@@ -1089,8 +1089,8 @@ packages:
     resolution: {integrity: sha512-cka47fVSo6lfQDIATYqb/vO1nvFfbPw7uWLayIXIhGETj0wcOOlrlkobOMDNQOFr9QOafegUPq13V2+6vtD7yg==}
     dev: true
 
-  /@tsconfig/node20@20.1.6:
-    resolution: {integrity: sha512-sz+Hqx9zwZDpZIV871WSbUzSqNIsXzghZydypnfgzPKLltVJfkINfUeTct31n/tTSa9ZE1ZOfKdRre1uHHquYQ==}
+  /@tsconfig/node22@22.0.6:
+    resolution: {integrity: sha512-/5thavHAnWDZwH2H6eEn/T8pBEBhtuKaWGMslsj82kJfvzQgOgEMK7X4goBbIUjgVtAzPTtM9Ml64LA0uxO6Iw==}
     dev: true
 
   /@types/acorn@4.0.6:
