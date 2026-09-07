@@ -87,7 +87,7 @@
     "string-format-jsx": "link:",
     "tsup": "^8.5.0",
     "typescript": "^5.9.2",
-    "vitest": "^1.6.1"
+    "vitest": "^3.0.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
